@@ -4,31 +4,68 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link ke Tailwind CDN -->
 </head>
 
-<body class="bg-indigo-100 flex justify-center items-center min-h-screen">
-    <div class="bg-white p-8 rounded shadow-md w-96">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Login Form -->
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
-        <form action="#" method="POST">
-            <div class="mb-4">
-                <label class="block mb-2 font-bold">Email</label>
-                <input type="email" placeholder="Enter your email" class="w-full p-3 border rounded" />
-            </div>
-            <div class="mb-6">
-                <label class="block mb-2 font-bold">Password</label>
-                <input type="password" placeholder="Enter your password" class="w-full p-3 border rounded" />
-            </div>
-            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold p-3 rounded">
-          Login
-        </button>
-        </form>
-        <p class="mt-6 text-center">
-            Don't have an account?
-            <a href="register.html" class="text-blue-500 hover:underline">Register</a
+
+        <form action="#" method="POST" class="space-y-6">
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label
+          >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+
+        <!-- Password Input -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            id="password"
+            name="password"
+            type="password"
+            required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-200"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+
+      <!-- Forgot Password & Sign Up Links -->
+      <div class="mt-6 text-center">
+        <a href="#" class="text-sm text-blue-600 hover:text-blue-500"
+          >Forgot your password?</a
         >
-      </p>
+      </div>
+
+      <div class="mt-2 text-center">
+        <a href="#" class="text-sm text-gray-600 hover:text-gray-500"
+          >Don't have an account?
+          <span class="text-blue-600 hover:text-blue-500">Sign up</span></a
+        >
+      </div>
     </div>
   </body>
 </html>
