@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('https://s10.aconvert.com/convert/p3r68-cdx67/axzyh-qxi2x.png');">
 
-  <!-- Main Container -->
-  <div class="bg-gray-200 bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
-    <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">Register an account</h2>
-    <p class="text-center text-gray-600 mb-6">Please fill out the form below to register.</p>
-    
-    <form action="#" method="POST" class="space-y-4">
-      <!-- Name Input -->
-      <div>
-        <label for="name" class="block text-sm text-gray-600 mb-1">Name</label>
-        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Name">
-      </div>
-      
-      <!-- NPM Input -->
-      <div>
-        <label for="npm" class="block text-sm text-gray-600 mb-1">NPM</label>
-        <input type="text" id="npm" name="npm" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="NPM">
-      </div>
-      
-      <!-- Email Input -->
-      <div>
-        <label for="email" class="block text-sm text-gray-600 mb-1">Email Address</label>
-        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address">
-      </div>
-      
-      <!-- Password Input -->
-      <div>
-        <label for="password" class="block text-sm text-gray-600 mb-1">Password</label>
-        <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
-      </div>
-      
-      <!-- Buttons -->
-      <div class="flex justify-between mt-6">
-        <button type="button" class="w-1/3 py-2 rounded-md bg-gray-300 text-gray-700 font-bold hover:bg-gray-400 transition duration-200">Back</button>
-        <button type="submit" class="w-1/3 py-2 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700 transition duration-200">Next</button>
-      </div>
-    </form>
-  </div>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="
+      background-image: url('https://s10.aconvert.com/convert/p3r68-cdx67/axzyh-qxi2x.png');
+    ">
+    <!-- Main Container -->
+    <div class="bg-gray-200 bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-2xl font-bold text-gray-700 text-center mb-4">
+            Register an account
+        </h2>
+        <p class="text-center text-gray-600 mb-6">
+            Please fill out the form below to register.
+        </p>
 
-</body>
+        <form action="#" method="POST" class="space-y-4">
+            <!-- Name Input -->
+            <div>
+                <label for="name" class="block text-sm text-gray-600 mb-1">Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Name"
+          />
+        </div>
+
+        <!-- NPM Input -->
+        <div>
+          <label for="npm" class="block text-sm text-gray-600 mb-1">NPM</label>
+                <input type="text" id="npm" name="npm" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="NPM" />
+            </div>
+
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm text-gray-600 mb-1">Email Address</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Email Address"
+          />
+        </div>
+
+        <!-- Password Input -->
+        <div>
+          <label for="password" class="block text-sm text-gray-600 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Password"
+          />
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between mt-6">
+          <button
+            onclick="window.location.href='../../../Login/login.html'"
+            class="w-1/3 py-2 rounded-md bg-gray-300 text-gray-700 font-bold hover:bg-gray-400 transition duration-200"
+          >
+            Back
+          </button>
+
+          <button
+            type="submit"
+            class="w-1/3 py-2 rounded-md bg-blue-600 text-white font-bold hover:bg-blue-700 transition duration-200"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
